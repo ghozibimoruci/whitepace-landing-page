@@ -10,6 +10,7 @@ import { YourWork } from './pages/YourWork/YourWork';
 import { YourData } from './pages/YourData/YourData';
 import { OurSponsor } from './pages/OurSponsor/OurSponsor';
 import { FavoriteApps } from './pages/FavoriteApps/FavoriteApps';
+import { OurUsers } from './pages/OurUsers/OurUsers';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
     <YourData />
     <OurSponsor />
     <FavoriteApps />
+    <OurUsers />
     </>
   )
 }
