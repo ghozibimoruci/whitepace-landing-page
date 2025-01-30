@@ -11,6 +11,7 @@ import { YourData } from './pages/YourData/YourData';
 import { OurSponsor } from './pages/OurSponsor/OurSponsor';
 import { FavoriteApps } from './pages/FavoriteApps/FavoriteApps';
 import { OurUsers } from './pages/OurUsers/OurUsers';
+import { FooterSection } from './pages/FooterSection/FooterSection';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
     <OurSponsor />
     <FavoriteApps />
     <OurUsers />
+    <FooterSection />
     </>
   )
 }
