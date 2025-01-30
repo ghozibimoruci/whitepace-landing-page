@@ -1,0 +1,9 @@
+.hero-img-container{
+    aspect-ratio: 1.5;
+    background-color: var(--ws-secondary-blue);
+}
+img.hero-section-accent {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

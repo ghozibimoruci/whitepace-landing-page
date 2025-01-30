@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{
+  --ws-primary-dark: #1A3453;
+  --ws-primary-light: #4F9CF9;
+  --ws-secondary-gold: #FFE492;
+  --ws-secondary-blue: #A7CEFC;
+  --ws-secondary-white: #FFFFFF;
+  --ws-secondary-black: #212529;
+}
+
+/* Background Class Start*/
+.bg-primary-dark {
+  background-color: var(--ws-primary-dark) !important;
+}
+.bg-primary-light {
+  background-color: var(--ws-primary-light) !important;
+}
+.bg-secondary-gold {
+  background-color: var(--ws-secondary-gold) !important;
+}
+.bg-secondary-blue {
+  background-color: var(--ws-secondary-blue) !important;
+}
+.bg-secondary-white {
+  background-color: var(--ws-secondary-white) !important;
+}
+.bg-secondary-black {
+  background-color: var(--ws-secondary-black) !important;
+}
+/* Background Class End */
+
+/* Text Class Start */
+.text-primary-dark {
+  color: var(--ws-primary-dark) !important;
+}
+.text-primary-light {
+  color: var(--ws-primary-light) !important;
+}
+.text-secondary-gold {
+  color: var(--ws-secondary-gold) !important;
+}
+.text-secondary-blue {
+  color: var(--ws-secondary-blue) !important;
+}
+.text-secondary-white {
+  color: var(--ws-secondary-white) !important;
+}
+.text-secondary-black {
+  color: var(--ws-secondary-black) !important;
+}
+/* Text Class End */
+
+/* Border Class Start */
+.border-solid-primary-dark-1 {
+  border: 1px solid var(--ws-primary-dark) !important;
+}
+.border-solid-primary-dark-2 {
+  border: 2px solid var(--ws-primary-dark) !important;
+}
+.border-solid-primary-dark-3 {
+  border: 3px solid var(--ws-primary-dark) !important;
+}
+.border-solid-primary-dark-4 {
+  border: 4px solid var(--ws-primary-dark) !important;
+}
+.border-solid-primary-light-1 {
+  border: 1px solid var(--ws-primary-light) !important;
+}
+.border-solid-primary-light-2 {
+  border: 2px solid var(--ws-primary-light) !important;
+}
+.border-solid-primary-light-3 {
+  border: 3px solid var(--ws-primary-light) !important;
+}
+.border-solid-primary-light-4 {
+  border: 4px solid var(--ws-primary-light) !important;
+}
+.border-solid-secondary-gold-1 {
+  border: 1px solid var(--ws-secondary-gold) !important;
+}
+.border-solid-secondary-gold-2 {
+  border: 2px solid var(--ws-secondary-gold) !important;
+}
+.border-solid-secondary-gold-3 {
+  border: 3px solid var(--ws-secondary-gold) !important;
+}
+.border-solid-secondary-gold-4 {
+  border: 4px solid var(--ws-secondary-gold) !important;
+}
+.border-solid-secondary-blue-1 {
+  border: 1px solid var(--ws-secondary-blue) !important;
+}
+.border-solid-secondary-blue-2 {
+  border: 2px solid var(--ws-secondary-blue) !important;
+}
+.border-solid-secondary-blue-3 {
+  border: 3px solid var(--ws-secondary-blue) !important;
+}
+.border-solid-secondary-blue-4 {
+  border: 4px solid var(--ws-secondary-blue) !important;
+}
+.border-solid-secondary-white-1 {
+  border: 1px solid var(--ws-secondary-white) !important;
+}
+.border-solid-secondary-white-2 {
+  border: 2px solid var(--ws-secondary-white) !important;
+}
+.border-solid-secondary-white-3 {
+  border: 3px solid var(--ws-secondary-white) !important;
+}
+.border-solid-secondary-white-4 {
+  border: 4px solid var(--ws-secondary-white) !important;
+}
+.border-solid-secondary-black-1 {
+  border: 1px solid var(--ws-secondary-black) !important;
+}
+.border-solid-secondary-black-2 {
+  border: 2px solid var(--ws-secondary-black) !important;
+}
+.border-solid-secondary-black-3 {
+  border: 3px solid var(--ws-secondary-black) !important;
+}
+.border-solid-secondary-black-4 {
+  border: 4px solid var(--ws-secondary-black) !important;
+}
+/* Border Class End */
+
+.prose{
+  max-width: none;
+}
+body{
+  margin: 0;
+}
+*{
+  font-family: "Inter", serif;
+}
+/* Paragraph/P1 */
+p.p1.semibold {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+p.p1.regular {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* Paragraph/P2 */
+p.p2.bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: auto;
+}
+
+p.p2.medium {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+p.p2.regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* Paragraph/P3 */
+p.p3.medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: auto;
+}
+
+p.p3.regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
