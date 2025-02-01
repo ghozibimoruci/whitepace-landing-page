@@ -21,7 +21,7 @@ export const FooterSection = () => {
     return (
         <div className="bg-primary-dark relative 2xl:pt-40 md:pt-28 pt-24 pb-8 prose">
             <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
-                <div className="flex flex-wrap justify-center lg:justify-between text-secondary-white">
+                <div className="flex flex-wrap justify-center lg:justify-between text-secondary-white mb-20">
                     <div className="w-full lg:w-auto mb-24 lg:mb-0 flex flex-wrap flex-col items-center lg:items-start">
                         <img src={Logo} alt="Logo Whitepace" className="max-w-max h-[34px] sm:h-[54px] md:h-[62px] lg:h-[34px] my-0" />
                         <p className="p2 regular my-0 text-center lg:text-start mt-6 lg:mt-4 md:max-w-[520px] lg:max-w-[240px]">
