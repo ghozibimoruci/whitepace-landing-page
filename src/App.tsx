@@ -12,11 +12,13 @@ import { OurSponsor } from './pages/OurSponsor/OurSponsor';
 import { FavoriteApps } from './pages/FavoriteApps/FavoriteApps';
 import { OurUsers } from './pages/OurUsers/OurUsers';
 import { FooterSection } from './pages/FooterSection/FooterSection';
+import { NavbarSection } from './pages/NavbarSection/NavbarSection';
 
 function App() {
 
   return (
     <>
+    <NavbarSection />
     <HeroSection />
     <WorkManagement />
     <UseExtension />
