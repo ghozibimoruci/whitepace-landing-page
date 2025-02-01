@@ -1146,6 +1146,42 @@ video {
   left: 50%;
 }
 
+.bottom-\[010px\]{
+  bottom: 010px;
+}
+
+.bottom-\[-10px\]{
+  bottom: -10px;
+}
+
+.bottom-\[-60px\]{
+  bottom: -60px;
+}
+
+.bottom-\[-60\]{
+  bottom: -60;
+}
+
+.bottom-\[10px\]{
+  bottom: 10px;
+}
+
+.top-\[10px\]{
+  top: 10px;
+}
+
+.top-\[10\]{
+  top: 10;
+}
+
+.top-\[100\%\]{
+  top: 100%;
+}
+
+.right-0{
+  right: 0px;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1239,6 +1275,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .block{
   display: block;
 }
@@ -1302,6 +1342,23 @@ video {
 
 .w-24{
   width: 6rem;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[260px\]{
+  width: 260px;
+}
+
+.w-\[180px\]{
+  width: 180px;
 }
 
 .max-w-\[160px\]{
@@ -1415,6 +1472,15 @@ video {
 .rounded-t-lg{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }
 
 .bg-transparent{
@@ -1567,6 +1633,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity, 1));
+}
+
 .no-underline{
   text-decoration-line: none;
 }
@@ -1595,6 +1666,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-black\/25{
   --tw-shadow-color: rgb(0 0 0 / 0.25);
   --tw-shadow: var(--tw-shadow-colored);
@@ -1610,6 +1687,10 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 :root{
@@ -1837,8 +1918,31 @@ p.p3.regular {
   line-height: 20px;
 }
 
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
+}
+
+.data-\[active\]\:text-white[data-active]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.data-\[hover\]\:text-white[data-hover]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.data-\[focus\]\:outline-1[data-focus]{
+  outline-width: 1px;
+}
+
+.data-\[focus\]\:outline-white[data-focus]{
+  outline-color: #fff;
 }
 
 @media (min-width: 640px){

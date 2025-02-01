@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export const NavbarSection = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [showTooltip, setShowTooltip] = useState(true);
     const linksList = ["Products", "Solutions", "Resources", "Pricing"];
 
     useEffect(() => {
@@ -22,8 +23,24 @@ export const NavbarSection = () => {
             <div className="bg-primary-dark fixed w-screen py-4 prose z-[5]">
                 <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
                     <div className="flex flex-wrap justify-between items-center">
-                        <div className="col-auto">
-                            <img src={Logo} alt="Logo Whitepace" className="max-w-max h-[34px] sm:h-[54px] md:h-[62px] lg:h-[34px] my-0" />
+                        <div className="col-auto relative">
+                            <img src={Logo} alt="Logo Whitepace" className="max-w-max h-[34px] sm:h-[54px] md:h-[62px] lg:h-[34px] my-0 cursor-pointer" onClick={()=>setShowTooltip(prev => !prev)} />
+                            <div className="absolute bg-secondary-gold text-secondary-black rounded-xl top-[100%] w-max shadow-xl mt-4">
+                                {
+                                    showTooltip && 
+                                    <div className="p-5 flex items-center gap-4">
+                                        <div className="w-auto">
+                                        I built this site following <a href="https://www.figma.com/community/file/1156860863353724933" target="_blank" className="text-primary-light">
+                                        this awesome design</a>!
+                                        </div>
+                                        <div className="w-auto">
+                                            <button className="bg-transparent flex" onClick={()=>setShowTooltip(prev => !prev)}>
+                                                <i className="material-icons-round">close</i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
                         </div>
                         <div className="col-auto flex flex-wrap">
                             <div className="hidden lg:flex">
