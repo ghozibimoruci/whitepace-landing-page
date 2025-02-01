@@ -17,7 +17,7 @@ export const YourData = () => {
                         The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
                         </p>
                         <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                          Read more<i className="material-icons-round">arrow_right_alt</i>
+                            <p className="p3 medium my-0">Read more</p><i className="material-icons-round">arrow_right_alt</i>
                         </button>
                     </div>
                 </div>

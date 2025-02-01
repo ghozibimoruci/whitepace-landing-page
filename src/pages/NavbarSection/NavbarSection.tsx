@@ -38,10 +38,10 @@ export const NavbarSection = () => {
                             </div>
                             <div className="flex flex-wrap items-center gap-4 lg:gap-3 xl:gap-6">
                                 <button className="bg-secondary-gold text-secondary-black border-solid-secondary-gold-1 rounded-lg py-5 px-8 hidden md:flex items-center">
-                                    Login
+                                    <p className="p3 medium my-0">Login</p>
                                 </button>
                                 <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 hidden md:flex items-center gap-1">
-                                    Try Whitepace free<i className="material-icons-round">arrow_right_alt</i>
+                                    <p className="p3 medium my-0">Try Whitepace free</p><i className="material-icons-round">arrow_right_alt</i>
                                 </button>
                                 <button onClick={() => setIsOpen(true)} className="bg-transparent text-secondary-white rounded-lg p-0 max-h-max flex lg:hidden">
                                     <i className="material-icons-round text-[42px]">menu</i>
@@ -92,10 +92,10 @@ const BottomDrawer = ({isOpen, setIsOpen, linksList = []}: {isOpen: boolean, set
                 <div className="absolute w-full bottom-0 left-0 p-5">
                     <div className="flex flex-wrap items-center gap-4 lg:gap-3 xl:gap-6 justify-evenly">
                         <button className="bg-secondary-gold text-secondary-black border-solid-secondary-gold-1 rounded-lg py-5 px-8 flex items-center">
-                            Login
+                            <p className="p3 medium my-0">Login</p>
                         </button>
                         <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                            Try Whitepace free<i className="material-icons-round">arrow_right_alt</i>
+                            <p className="p3 medium my-0">Try Whitepace free</p><i className="material-icons-round">arrow_right_alt</i>
                         </button>
                     </div>
                 </div>

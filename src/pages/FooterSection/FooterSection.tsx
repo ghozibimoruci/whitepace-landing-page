@@ -64,7 +64,7 @@ export const FooterSection = () => {
                         </p>
                         <div>
                             <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                            Start Today<i className="material-icons-round">arrow_right_alt</i>
+                                <p className="p3 medium my-0">Start Today</p><i className="material-icons-round">arrow_right_alt</i>
                             </button>
                         </div>
                     </div>

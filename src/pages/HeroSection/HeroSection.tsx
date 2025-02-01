@@ -32,7 +32,7 @@ export const HeroSection = () => {
                         Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
                         </p>
                         <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                          Try Whitepace free<i className="material-icons-round">arrow_right_alt</i>
+                          <p className="p3 medium my-0">Try Whitepace free</p><i className="material-icons-round">arrow_right_alt</i>
                         </button>
                     </div>
                     <div className="w-full lg:w-1/2 mt-20 lg:mt-0">

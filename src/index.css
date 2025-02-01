@@ -1138,6 +1138,14 @@ video {
   bottom: 0px;
 }
 
+.bottom-full{
+  bottom: 100%;
+}
+
+.left-1\/2{
+  left: 50%;
+}
+
 .z-0{
   z-index: 0;
 }
@@ -1227,8 +1235,16 @@ video {
   margin-top: 1rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .block{
   display: block;
+}
+
+.inline-block{
+  display: inline-block;
 }
 
 .flex{
@@ -1259,6 +1275,10 @@ video {
   height: 100dvh;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .max-h-max{
   max-height: -moz-max-content;
   max-height: max-content;
@@ -1278,6 +1298,10 @@ video {
 
 .w-screen{
   width: 100vw;
+}
+
+.w-24{
+  width: 6rem;
 }
 
 .max-w-\[160px\]{
@@ -1315,8 +1339,17 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-1\/2{
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .resize{
@@ -1408,6 +1441,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-800{
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1469,6 +1507,16 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -1503,6 +1551,11 @@ video {
 
 .text-\[42px\]{
   font-size: 42px;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .\!font-medium{
@@ -1782,6 +1835,10 @@ p.p3.regular {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+
+.group:hover .group-hover\:opacity-100{
+  opacity: 1;
 }
 
 @media (min-width: 640px){

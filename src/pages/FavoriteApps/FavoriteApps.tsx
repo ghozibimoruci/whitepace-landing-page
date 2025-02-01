@@ -36,7 +36,7 @@ export const FavoriteApps = () => {
                         Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
                         </p>
                         <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                          Read More<i className="material-icons-round">arrow_right_alt</i>
+                          <p className="p3 medium my-0">Read More</p><i className="material-icons-round">arrow_right_alt</i>
                         </button>
                     </div>
                 </div>

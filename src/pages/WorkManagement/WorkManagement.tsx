@@ -25,7 +25,7 @@ const ProjectManagement = () => {
                     Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
                     </p>
                     <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                        Get Started<i className="material-icons-round">arrow_right_alt</i>
+                        <p className="p3 medium my-0">Get Started</p><i className="material-icons-round">arrow_right_alt</i>
                     </button>
                 </div>
                 <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
@@ -50,7 +50,7 @@ const WorkTogether = () => {
                     With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
                     </p>
                     <button className="bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-5 px-8 flex items-center gap-1">
-                        Try it now<i className="material-icons-round">arrow_right_alt</i>
+                        <p className="p3 medium my-0">Try it now</p><i className="material-icons-round">arrow_right_alt</i>
                     </button>
                 </div>
                 <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
