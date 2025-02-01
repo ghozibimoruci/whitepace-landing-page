@@ -1,6 +1,5 @@
 import './App.css'
-import 'swiper/css';
-import 'swiper/css/bundle';
+import "swiper/swiper-bundle.css";
 import { ChoosePlan } from './pages/ChoosePlan/ChoosePlan'
 import { CustomiseNeed } from './pages/CustomiseNeed/CustomiseNeed'
 import { HeroSection } from './pages/HeroSection/HeroSection'
