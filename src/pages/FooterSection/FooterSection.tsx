@@ -1,5 +1,8 @@
 import "./FooterSection.css";
 import Logo from "../../assets/logo/Logo.png";
+import FacebookIcon from "../../assets/footer-section/FacebookIcon.svg";
+import TwitterIcon from "../../assets/footer-section/TwitterIcon.svg";
+import LinkedinIcon from "../../assets/footer-section/LinkedinIcon.svg";
 
 export const FooterSection = () => {
     const footerLinkList = [
@@ -15,8 +18,20 @@ export const FooterSection = () => {
           title: "Company",
           items: ["About us", "Careers", "Media kit"]
         }
-      ];
-
+    ];
+    const bottomLinkList = [
+        "Terms & privacy", "Security", "Status", "©2021 Whitepace LLC."
+    ]
+    const socialMediaList = [{
+        title: "Facebook Icon",
+        src: FacebookIcon,
+    },{
+        title: "Twitter Icon",
+        src: TwitterIcon
+    }, {
+        title: "Linkedin Icon",
+        src: LinkedinIcon
+    }]
 
     return (
         <div className="bg-primary-dark relative 2xl:pt-40 md:pt-28 pt-24 pb-8 prose">
@@ -52,6 +67,31 @@ export const FooterSection = () => {
                             Start Today<i className="material-icons-round">arrow_right_alt</i>
                             </button>
                         </div>
+                    </div>
+                </div>
+                <div className="w-full separator-footer hidden lg:block mb-8"></div>
+                <div className="flex flex-wrap justify-between text-secondary-white">
+                    <div className="w-full lg:w-auto flex flex-wrap items-center lg:gap-[60px] justify-between lg:justify-start">
+                        <div className="w-full sm:w-auto mb-5 sm:mb-0 justify-center flex items-center">
+                            <i className="material-icons-round pe-2">language</i>
+                            <p className="p3 regular my-0">English</p>
+                            <i className="material-icons-round ps-2">expand_more</i>
+                        </div>
+                        {
+                            bottomLinkList.map((text, idx) => (
+                                <div className="w-full sm:w-auto mb-5 sm:mb-0 justify-center flex" key={idx}>
+                                    <p className="p3 regular my-0">{text}</p>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="w-full separator-footer lg:hidden sm:my-5"></div>
+                    <div className="w-full lg:w-auto flex flex-wrap items-center lg:gap-8 justify-evenly lg:justify-start mt-5 sm:mt-0">
+                        {
+                            socialMediaList.map((item, idx) => (
+                                <img src={item.src} alt={item.title} key={idx} className="my-0" />
+                            ))
+                        }
                     </div>
                 </div>
             </div>
