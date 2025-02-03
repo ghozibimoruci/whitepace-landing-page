@@ -25,21 +25,37 @@ export const NavbarSection = () => {
                     <div className="flex flex-wrap justify-between items-center">
                         <div className="col-auto relative">
                             <img src={Logo} alt="Logo Whitepace" className="max-w-max h-[34px] sm:h-[54px] md:h-[62px] lg:h-[34px] my-0 cursor-pointer" onClick={()=>setShowTooltip(prev => !prev)} />
-                            <div className="absolute bg-secondary-gold text-secondary-black rounded-xl top-[100%] w-max shadow-xl mt-4">
-                                {
-                                    showTooltip && 
-                                    <div className="p-5 flex items-center gap-4">
-                                        <div className="w-auto">
-                                        I built this site following <a href="https://www.figma.com/community/file/1156860863353724933" target="_blank" className="text-primary-light">
-                                        this awesome design</a>!
-                                        </div>
-                                        <div className="w-auto">
-                                            <button className="bg-transparent flex" onClick={()=>setShowTooltip(prev => !prev)}>
+                            <div className="relative">
+                                {showTooltip && (
+                                    <div className="absolute bg-secondary-gold text-secondary-black rounded-xl top-[100%] left-0 w-max max-w-[calc(100vw-28px)] shadow-xl mt-4 
+                                        before:content-[''] before:absolute before:w-0 before:h-0 
+                                        before:border-l-[10px] before:border-l-transparent 
+                                        before:border-r-[10px] before:border-r-transparent 
+                                        before:border-b-[10px] before:border-b-[var(--ws-secondary-gold)] 
+                                        before:top-[-8px] before:left-[8px]">
+                                        <div className="p-5 flex items-center gap-4">
+                                            <div className="w-auto">
+                                            I built this site following{" "}
+                                            <a
+                                                href="https://www.figma.com/community/file/1156860863353724933"
+                                                target="_blank"
+                                                className="text-primary-light"
+                                            >
+                                                this awesome design
+                                            </a>
+                                            !
+                                            </div>
+                                            <div className="w-auto">
+                                            <button
+                                                className="bg-transparent flex"
+                                                onClick={() => setShowTooltip((prev) => !prev)}
+                                            >
                                                 <i className="material-icons-round">close</i>
                                             </button>
+                                            </div>
                                         </div>
                                     </div>
-                                }
+                                )}
                             </div>
                         </div>
                         <div className="col-auto flex flex-wrap">
@@ -53,7 +69,7 @@ export const NavbarSection = () => {
                                     ))
                                 }
                             </div>
-                            <div className="flex flex-wrap items-center gap-4 lg:gap-3 xl:gap-6">
+                            <div className="flex flex-wrap items-center gap-4 md:gap-2 lg:gap-3 xl:gap-6">
                                 <button className="bg-secondary-gold text-secondary-black border-solid-secondary-gold-1 rounded-lg py-5 px-8 hidden md:flex items-center">
                                     <p className="p3 medium my-0">Login</p>
                                 </button>

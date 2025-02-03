@@ -29,9 +29,12 @@ export const FavoriteApps = () => {
                       <img src={FavoriteAppsImage} alt="Work Together Image" className="my-0 w-[551px] lg:w-full max-w-full m-auto" />
                     </div>
                     <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:ps-28 lg:ps-20">
-                        <h2 className="text-secondary-white mt-0 mb-6">
+                        <h2 className="text-secondary-white mt-0 mb-6 hidden md:block">
                         Work with Your Favorite Apps Using whitepace
                         </h2>
+                        <h3 className="text-secondary-white mt-0 mb-6 block md:hidden">
+                        Work with Your Favorite Apps Using whitepace
+                        </h3>
                         <p className="text-secondary-white mb-20">
                         Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
                         </p>

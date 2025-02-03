@@ -64,9 +64,12 @@ export const ChoosePlan = () => {
             <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
                 <div className="flex flex-wrap items-center text-center mb-20">
                     <div className="w-full">
-                        <h2 className="text-secondary-black mt-0 mb-6">
+                        <h2 className="text-secondary-black mt-0 mb-6 hidden md:block">
                         Choose Your Plan
                         </h2>
+                        <h3 className="text-secondary-black mt-0 mb-6 block md:hidden">
+                        Choose Your Plan
+                        </h3>
                         <p className="text-secondary-black">
                         Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.
                         </p>
@@ -99,48 +102,12 @@ export const ChoosePlan = () => {
                             planList.map((plan, idx) => (
                                 <SwiperSlide key={idx}>
                                     <div className="px-5 pt-5">
-                                      <div className={
-                                        "rounded-xl py-5 px-6 md:py-10 md:px-11 relative plan-card"+(
-                                          selectedIdx == idx ? " bg-primary-dark border-solid-primary-dark-1" : " bg-secondary-white border-solid-secondary-gold-1")
-                                      }>
-                                          {
-                                            isLg && <a type="button" onMouseOver={() => setSelectedIdx(idx)} className="absolute top-0 left-0 w-full h-full z-0" />
-                                          }
-                                          <p className={"mt-0 mb-5 p1 semibold" + (
-                                            selectedIdx == idx ? " text-secondary-white" : " text-secondary-black"
-                                          )}>{plan.title}</p>
-                                          <h4 className={"mt-0 mb-5" + (
-                                            selectedIdx == idx ? " text-secondary-gold" : " text-secondary-black"
-                                          )}>{plan.price}</h4>
-                                          <p className={"mt-0 mb-5 p2 medium" + (
-                                            selectedIdx == idx ? " text-secondary-white" : " text-secondary-black"
-                                          )}>{plan.description}</p>
-                                          {
-                                              plan.benefits.map((bnf, jdx) => (
-                                                  <div className="flex items-center mb-6" key={jdx}>
-                                                      <div className={"w-auto flex flex-none" + (
-                                                    selectedIdx == idx ? " text-secondary-gold" : " text-secondary-black"
-                                                  )}>
-                                                          <i className="material-icons-round">task_alt</i>
-                                                      </div>
-                                                      <div className={"flex-grow ps-4" + (
-                                                    selectedIdx == idx ? " text-secondary-white" : " text-secondary-black"
-                                                  )}>
-                                                          <p className={"p2 my-0 regular" + (
-                                                            selectedIdx == idx ? " !font-medium" : ""
-                                                          )}>{bnf}</p>
-                                                      </div>
-                                                  </div>
-
-                                              ))
-                                          }
-                                          <button className={
-                                            selectedIdx == idx ? "bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-3 px-8" : 
-                                            "bg-secondary-white text-secondary-black border-solid-secondary-gold-1 rounded-lg py-3 px-8"
-                                          }>
-                                            <p className="p3 medium my-0">Get Started</p>
-                                          </button>
-                                      </div>
+                                      <PlanCard
+                                        isLg
+                                        plan={plan}
+                                        selected={selectedIdx == idx}
+                                        mouseOverAction={() => setSelectedIdx(idx)}
+                                      />
                                     </div>
                                 </SwiperSlide>
                             ))
@@ -150,4 +117,66 @@ export const ChoosePlan = () => {
             </div>
         </div>
     )
+}
+
+const PlanCard = ({
+  isLg,
+  selected,
+  plan,
+  mouseOverAction
+}:{
+  isLg: boolean,
+  selected: boolean,
+  plan: {
+    title: string,
+    price: string,
+    description: string,
+    benefits: string[]
+  },
+  mouseOverAction: () => void
+}) => {
+  return (
+    <div className={
+      "rounded-xl py-5 px-6 md:py-10 md:px-11 relative plan-card"+(
+        selected ? " bg-primary-dark border-solid-primary-dark-1" : " bg-secondary-white border-solid-secondary-gold-1")
+    }>
+        {
+          isLg && <a type="button" onMouseOver={mouseOverAction} className="absolute top-0 left-0 w-full h-full z-0" />
+        }
+        <p className={"mt-0 mb-5 p1 semibold" + (
+          selected ? " text-secondary-white" : " text-secondary-black"
+        )}>{plan.title}</p>
+        <h4 className={"mt-0 mb-5" + (
+          selected ? " text-secondary-gold" : " text-secondary-black"
+        )}>{plan.price}</h4>
+        <p className={"mt-0 mb-5 p2 medium" + (
+          selected ? " text-secondary-white" : " text-secondary-black"
+        )}>{plan.description}</p>
+        {
+            plan.benefits.map((bnf, jdx) => (
+                <div className="flex items-center mb-6" key={jdx}>
+                    <div className={"w-auto flex flex-none" + (
+                  selected ? " text-secondary-gold" : " text-secondary-black"
+                )}>
+                        <i className="material-icons-round">task_alt</i>
+                    </div>
+                    <div className={"flex-grow ps-4" + (
+                  selected ? " text-secondary-white" : " text-secondary-black"
+                )}>
+                        <p className={"p2 my-0 regular" + (
+                          selected ? " !font-medium" : ""
+                        )}>{bnf}</p>
+                    </div>
+                </div>
+
+            ))
+        }
+        <button className={
+          selected ? "bg-primary-light text-secondary-white border-solid-primary-light-1 rounded-lg py-3 px-8" : 
+          "bg-secondary-white text-secondary-black border-solid-secondary-gold-1 rounded-lg py-3 px-8"
+        }>
+          <p className="p3 medium my-0">Get Started</p>
+        </button>
+    </div>
+  )
 }

@@ -9,9 +9,12 @@ export const CustomiseNeed = () => {
                         </div>
                     </div>
                     <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:ps-28 lg:ps-20">
-                        <h2 className="text-secondary-black mt-0 mb-6">
+                        <h2 className="text-secondary-black mt-0 mb-6 hidden md:block">
                         Customise it to your needs
                         </h2>
+                        <h3 className="text-secondary-black mt-0 mb-6 block md:hidden">
+                        Customise it to your needs
+                        </h3>
                         <p className="text-secondary-black mb-20">
                         Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
                         </p>

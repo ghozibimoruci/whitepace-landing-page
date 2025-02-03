@@ -57,9 +57,12 @@ export const OurUsers = () => {
             <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
                 <div className="flex flex-wrap items-center text-center mb-20">
                     <div className="w-full">
-                        <h2 className="text-secondary-black my-0">
+                        <h2 className="text-secondary-black my-0 hidden md:block">
                         See what our trusted users Say
                         </h2>
+                        <h3 className="text-secondary-black my-0 block md:hidden">
+                        See what our trusted users Say
+                        </h3>
                     </div>
                 </div>
                 <div>

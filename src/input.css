@@ -181,3 +181,30 @@ p.p3.regular {
   font-size: 16px;
   line-height: 20px;
 }
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar */
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important; /* Ensure transparency */
+  box-shadow: none;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent thumb */
+  border-radius: 16px; /* Rounded scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3); /* Darker on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent; /* Transparent track */
+}

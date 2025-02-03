@@ -18,9 +18,12 @@ const ProjectManagement = () => {
         <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
             <div className="flex flex-wrap items-center text-center lg:text-start">
                 <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:pe-28 lg:pe-20">
-                    <h2 className="text-secondary-black mt-0 mb-6">
+                    <h2 className="text-secondary-black mt-0 mb-6 hidden md:block">
                     Project Management
                     </h2>
+                    <h3 className="text-secondary-black mt-0 mb-6 block md:hidden">
+                    Project Management
+                    </h3>
                     <p className="text-secondary-black mb-20">
                     Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
                     </p>
@@ -43,9 +46,12 @@ const WorkTogether = () => {
         <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
             <div className="flex flex-wrap lg:flex-row-reverse items-center text-center lg:text-start">
                 <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:ps-28 lg:ps-20">
-                    <h2 className="text-secondary-black mt-0 mb-6">
+                    <h2 className="text-secondary-black mt-0 mb-6 hidden md:block">
                     Work together
                     </h2>
+                    <h3 className="text-secondary-black mt-0 mb-6 block md:hidden">
+                    Work together
+                    </h3>
                     <p className="text-secondary-black mb-20">
                     With whitepace, share your notes with your colleagues and collaborate on them. You can also publish a note to the internet and share the URL with others.
                     </p>

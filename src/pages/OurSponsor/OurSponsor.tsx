@@ -10,9 +10,12 @@ export const OurSponsor = () => {
             <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
                 <div className="flex flex-wrap items-center text-center lg:text-start">
                     <div className="w-full flex flex-wrap justify-center">
-                        <h2 className="text-secondary-black mt-0 mb-28">
+                        <h2 className="text-secondary-black mt-0 mb-28 hidden md:block">
                         Our sponsors
                         </h2>
+                        <h3 className="text-secondary-black mt-0 mb-28 block md:hidden">
+                        Our sponsors
+                        </h3>
                     </div>
                     <div className="w-full flex flex-wrap justify-between items-center flex-col lg:flex-row">
                         <img src={Apple} alt="Apple Icon" className="sponsor-icons max-w-max h-[40px] sm:h-[52px] md:h-[64px]" />

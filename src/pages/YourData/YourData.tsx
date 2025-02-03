@@ -10,9 +10,12 @@ export const YourData = () => {
                         <img src={YourDataImg} alt="Your Data Image" className="my-0 w-[551px] lg:w-full max-w-full m-auto" />
                     </div>
                     <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:pe-28 lg:pe-20">
-                        <h2 className="text-secondary-black mt-0 mb-6">
+                        <h2 className="text-secondary-black mt-0 mb-6 hidden md:block">
                         100% your data
                         </h2>
+                        <h3 className="text-secondary-black mt-0 mb-6 block md:hidden">
+                        100% your data
+                        </h3>
                         <p className="text-secondary-black mb-20">
                         The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
                         </p>

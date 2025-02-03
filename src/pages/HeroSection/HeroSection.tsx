@@ -25,9 +25,12 @@ export const HeroSection = () => {
             <div className="container relative z-1 2xl:px-7 lg:px-8 md:px-5 px-4">
                 <div className="flex flex-wrap items-center text-center lg:text-start">
                     <div className="w-full flex flex-wrap justify-center lg:justify-start lg:w-1/2 2xl:pe-28 lg:pe-20">
-                        <h2 className="text-secondary-white mt-0 mb-6">
+                        <h2 className="text-secondary-white mt-0 mb-6 hidden md:block">
                         Get More Done with whitepace
                         </h2>
+                        <h3 className="text-secondary-white mt-0 mb-6 block md:hidden">
+                        Get More Done with whitepace
+                        </h3>
                         <p className="text-secondary-white mb-20">
                         Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
                         </p>
